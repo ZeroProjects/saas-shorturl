@@ -18,7 +18,7 @@ class UpgradeUserPlanForm extends Component
 
     public function render()
     {
-        return view('profile.upgrade-user-plan-form', [
+        return view('livewire.upgrade-user-plan-form', [
             'currentPlan' => auth()->user()->plan
         ]);
     }

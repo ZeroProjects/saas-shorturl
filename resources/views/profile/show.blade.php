@@ -32,7 +32,7 @@
             <div class="mt-10 sm:mt-0">
                 @livewire('upgrade-user-plan-form')
             </div>
-            
+
             <x-jet-section-border />
 
             <div class="mt-10 sm:mt-0">
