@@ -15,6 +15,10 @@ class CreateLinksTable extends Migration
     {
         Schema::create('links', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id')->index();
+            $table->text('original');
+            $table->string('shortened'); // the generated short version 
+            $table->unsignedBigInteger('views')->default(0); // will store the number of hits the url gets (no ideal for large production but here is fine)
             $table->timestamps();
         });
     }
